@@ -8,7 +8,7 @@ I have create 3 rack application
     This Rack application will displays the user IP address
 2. FilterLocalHost (filter_local_host.rb)
 
-    This Rack application will check user is calling this method from localhost or not
+    This Rack application will check user is calling this method from localhost or not.
     if localhost then call other Rack application or display 403 error 
 3. LoggingMiddleware (logging_middleware.rb)
 
