@@ -1,4 +1,4 @@
-# Rack
+# Rack Middleware
 **This is basic example for Rack application**
 
 I have create 3 rack application
