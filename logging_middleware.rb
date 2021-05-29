@@ -1,4 +1,4 @@
-# This add the Sleep amd logs the time taken
+# This add the Sleep and logs the time taken
 class LoggingMiddleware
     
   def initialize(app)
@@ -10,7 +10,7 @@ class LoggingMiddleware
     sleep 2
     status, headers, body = @app.call(env)
     after = Time.now.to_i
-    log_message = "App took #{after - before} seconds.to load"
+    log_message = "<h2> App took #{after - before} seconds.to load</h2>"
 
     [status, headers, body << log_message]
   end

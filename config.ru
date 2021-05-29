@@ -5,9 +5,8 @@ require_relative 'filter_local_host'
 use Rack::Reloader, 5
 app =
 Rack::Builder.new do |builder|
-  
-  builder.use LoggingMiddleware
   builder.use FilterLocalHost
+  builder.use LoggingMiddleware
   builder.run RackApp.new
 end
 run app
